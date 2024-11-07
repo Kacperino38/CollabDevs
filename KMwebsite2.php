@@ -23,13 +23,13 @@
 			margin-right: 12%; 
 			padding-bottom: 80px; 
             padding-top: 4px; 
-            padding-left: 6px; 
-            padding-right: 6px; 
+            padding-left: 60px; 
+            padding-right: 60px; 
 			background-color: rgb(255, 239, 213); 
 
         } 
 
-        .space { margin-top: 200px; }
+        .space { margin-top: 100px; }
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
@@ -130,9 +130,9 @@
 
     <table class="table table-striped">
     <tr>
-      <th>Class Name</th>
-      <th>Primary Ability</th>
-      <th>Hit Dice</th>
+      <th style="color:white;background-color:#A0522D">Class Name</th>
+      <th style="color:white;background-color:#A0522D">Primary Ability</th>
+      <th style="color:white;background-color:#A0522D">Hit Dice</th>
     </tr>
     <?php while($row = $result->fetch_assoc()):?>
       <tr>

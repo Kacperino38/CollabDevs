@@ -23,13 +23,16 @@
 			margin-right: 12%; 
 			padding-bottom: 80px; 
             padding-top: 4px; 
-            padding-left: 6px; 
-            padding-right: 6px; 
+            padding-left: 60px; 
+            padding-right: 60px; 
 			background-color: rgb(255, 239, 213); 
 
         } 
 
-        .space { margin-top: 200px; }
+        .space { 
+          margin-top: 100px; 
+        }
+
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
@@ -129,13 +132,15 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
 
 
     <table class="table table-striped">
+    <div class ="tableheading">
     <tr>
-      <th>Name</th>
-      <th>Race Bonuses</th>
-      <th>Size</th>
-      <th>Speed</th>
-      <th>Languages</th>
+      <th  style="color:white;background-color:#A0522D">Name</th>
+      <th  style="color:white;background-color:#A0522D">Race Bonuses</th>
+      <th  style="color:white;background-color:#A0522D">Size</th>
+      <th  style="color:white;background-color:#A0522D">Speed</th>
+      <th  style="color:white;background-color:#A0522D">Languages</th>
     </tr>
+  </div>
     <?php while($row = $result->fetch_assoc()):?>
       <tr>
         <td><?=$row['Race_Name']?></td>
@@ -146,9 +151,8 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
       </tr>
   <?php endwhile;?>
   </table>
-
-
-
         </div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body> 
