@@ -119,16 +119,15 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
     if(isset(($_POST['searchterms'])))
     $sql = "SELECT Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language 
             FROM 5e_Race
-            WHERE Race_Name LIKE  '%" . $_POST['searchterms']. "%'";
+            WHERE Race_Name LIKE '%" . $_POST['searchterms']. "%'";
 
     else
 
-    $sql = "SELECT Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language FROM 5e_Race";
+    $sql = "SELECT *  FROM 5e_Race";
+
 
     //retrieve data (display below)
-    $result = $mysqli -> query($sql); 
-    
-    ?>
+    $result = $mysqli -> query($sql);?>
 
 
     <table class="table table-striped">
@@ -143,7 +142,7 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
   </div>
     <?php while($row = $result->fetch_assoc()):?>
       <tr>
-        <td><?=$row['Race_Name']?></td>
+        <td><a href="KMwebsitedetails.php?which=<?$row['Race_Name']?>"><?=$row['Race_Name']?></td>
         <td><?=$row['Race_Bonus']?></td>
         <td><?=$row['Race_Size']?></td>
         <td><?=$row['Race_Speed']?></td>
@@ -151,7 +150,14 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
       </tr>
   <?php endwhile;?>
   </table>
+
+
+
         </div>
+
+<?php
+
+?>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
