@@ -91,7 +91,7 @@
         </div>
         </div>
         <form class="d-flex" role="search" action="KMwebsite1.php" method="post">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="Test">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
@@ -116,14 +116,20 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
       exit();
     }
 
-    if(isset(($_POST['searchterms'])))
+
+//CODE FOR DATA, COOKIE NOT WORKING!!!! (COOKIE ALSO IN)
+
+    if(isset(($_GET['searchterms']))) {
     $sql = "SELECT Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language 
             FROM 5e_Race
-            WHERE Race_Name LIKE '%" . $_POST['searchterms']. "%'";
+            WHERE Race_Name LIKE '%" . $_GET['searchterms']. "%'";
 
+            setcookie("searchterms", $_GET['searchterms'], time()+3600);
+
+    }
     else
 
-    $sql = "SELECT *  FROM 5e_Race";
+    $sql = "SELECT  Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language FROM 5e_Race";
 
 
     //retrieve data (display below)
