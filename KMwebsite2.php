@@ -89,8 +89,9 @@
         </div>
         </div>
         </div>
-        <form class="d-flex" role="search" action="KMwebsite2.php" method="post">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" role="search" action="KMwebsite2.php" method="get">
+      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
@@ -116,11 +117,14 @@
       exit();
     }
 
-    if(isset(($_POST['searchterms'])))
+    if(isset(($_GET['searchterms']))){
     $sql = "SELECT Class_Name, Class_Ability, Class_HitDice
             FROM 5eClass
-            WHERE Class_Name LIKE '%" . $_POST['searchterms']. "%'";
+            WHERE Class_Name LIKE '%" . $_GET['searchterms']. "%'";
 
+            setcookie("searchterms", $_GET['searchterms'], time()+3600);
+
+    }
     else
 
     $sql = "SELECT Class_Name, Class_Ability, Class_HitDice FROM 5eClass";

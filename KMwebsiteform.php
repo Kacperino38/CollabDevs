@@ -105,10 +105,46 @@
         This can be done in the form below!
         <div class="space"></div>
 
-        <!-- ENTER FORM HERE! -->
+        <!-- ENTER FORM HERE! 
+        
+        CREATE FORM + CREATE DATABASE TO LINK TO IT
+        DATABASE NEEDS TO BE CREATED
+        FIELDS ADDED TO INSERT CODE
+        LINK TO DATABASE
+        TEXTBOXES ON PHYSICAL SITE
+
+
+        -->
+        <?php
+
+            $mysqli = new
+            mysqli("localhost","2342154","K@cperino60018","db2342154");
+
+            //error msg
+            if ($mysqli -> connect_errno) {
+            echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+            exit();
+            }
+            
+            //$sql = "INSERT INTO `table` VALUES 
+            //('John', 'Doe', 'john@example.com');";
+
+            ?>
+
+        <tr>
+
+            <tr><input name="Name"></tr>
+            <tr><input name="Race"></th>
+            <th><input name="Class"></th>
+
+        </tr>
 
 
 
+
+
+
+        
 
 
         <div class="space"></div>

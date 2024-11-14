@@ -98,10 +98,6 @@
       <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
       value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
 
-
-
-
-
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
@@ -126,8 +122,6 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
       exit();
     }
 
-
-//CODE FOR DATA, COOKIE NOT WORKING!!!! (COOKIE ALSO IN)
 
     if(isset(($_GET['searchterms']))) {
     $sql = "SELECT Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language 
@@ -160,7 +154,7 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
   </div>
     <?php while($row = $result->fetch_assoc()):?>
       <tr>
-        <td><a href="KMwebsitedetails.php?which=<?$row['Race_Name']?>"><?=$row['Race_Name']?></td>
+        <td><a href="KMwebsitedetails.php?which=<?=$row['Race_Name']?>"><?=$row['Race_Name']?></td>
         <td><?=$row['Race_Bonus']?></td>
         <td><?=$row['Race_Size']?></td>
         <td><?=$row['Race_Speed']?></td>
