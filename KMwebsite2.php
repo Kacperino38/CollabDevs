@@ -127,6 +127,7 @@
     
     ?>
 
+    <!-- Code below displays the data in a table -->
 
     <table class="table table-striped">
     <tr>

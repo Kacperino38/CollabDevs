@@ -77,6 +77,8 @@
  
     <body>  
 
+    <!-- This is the code of the header -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">D&D 5e Mini-Wiki</a>
@@ -91,7 +93,7 @@
         </div>
         </div>
         <form class="d-flex" role="search" action="KMwebsite1.php" method="post">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="Test">
+      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="<?=$COOKIE["searchterms"];?>">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
@@ -134,6 +136,8 @@ Hello, this is the pages for Dungeons and Dragons 5e Races!
 
     //retrieve data (display below)
     $result = $mysqli -> query($sql);?>
+
+    <!-- Code below displays the data in a table -->
 
 
     <table class="table table-striped">

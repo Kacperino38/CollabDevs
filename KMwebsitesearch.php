@@ -1,5 +1,7 @@
 <?php
 
+//Code for GET search page (NOT WORKING!!!!)
+
 include 'KMwebsite1.php';
 
 $searchterms = $_POST['searchterms'];

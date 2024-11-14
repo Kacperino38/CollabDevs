@@ -1,5 +1,7 @@
 <?php
 
+//Code is meant to be second page for details on each field 
+
 include("KMwebsite1.php")
 $mysqli = new
     mysqli("localhost","2342154","K@cperino60018","db2342154");
