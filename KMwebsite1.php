@@ -87,13 +87,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+        <a class="nav-link" href="KMwebsitehomepage.php">Homepage</a>
         <a class="nav-link" href="KMwebsite1.php">Race</a>
         <a class="nav-link" href="KMwebsite2.php">Class</a>
         </div>
         </div>
         </div>
-        <form class="d-flex" role="search" action="KMwebsite1.php" method="post">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="<?=$COOKIE["searchterms"];?>">
+        <form class="d-flex" role="search" action="KMwebsite1.php" method="get">
+      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
+      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
+
+
+
+
+
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
@@ -102,7 +109,7 @@
 
 
         <div class = page-padding> 
-                
+        <br>    
 Hello, this is the pages for Dungeons and Dragons 5e Races!
 <div class="space"></div>
  
