@@ -39,7 +39,7 @@ $row = $result -> fetch_assoc();
     </tr>
   </div>
       <tr>
-        <td font-weight="bold"><?=$row['Race_Name']?></td>
+        <td><?=$row['Race_Name']?></td>
         <td><?=$row['Race_Bonus']?></td>
         <td><?=$row['Race_Size']?></td>
         <td><?=$row['Race_Speed']?></td>
