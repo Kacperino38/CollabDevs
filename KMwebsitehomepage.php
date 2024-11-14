@@ -86,6 +86,7 @@
         <a class="nav-link" href="KMwebsitehomepage.php">Homepage</a>
         <a class="nav-link" href="KMwebsite1.php">Race</a>
         <a class="nav-link" href="KMwebsite2.php">Class</a>
+        <a class="nav-link" href="KMwebsiteform.php">Character ideas</a>
         </div>
         </div>
         </div>

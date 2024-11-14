@@ -82,6 +82,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+        
         <a class="nav-link" href="KMwebsitehomepage.php">Homepage</a>
         <a class="nav-link" href="KMwebsite1.php">Race</a>
         <a class="nav-link" href="KMwebsite2.php">Class</a>
@@ -89,69 +90,29 @@
         </div>
         </div>
         </div>
-        <form class="d-flex" role="search" action="KMwebsite2.php" method="post">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
     </nav>
     </nav>
 
 
         <div class = page-padding> 
-         
+                
         <br>
-        Hello, this is the pages for Dungeons and Dragons 5e Classes!
-<div class="space"></div>
+        Hello, this is the website for Dungeons and Dragons 5e Races and Classes!
+        <br>
+        <br>
+        This page is for users to enter their own customer character ideas!
+        <br>
+        This can be done in the form below!
+        <div class="space"></div>
 
- 
-<?php
-
-//connecting to sql
-    $mysqli = new
-    mysqli("localhost","2342154","K@cperino60018","db2342154");
-
-    //error msg
-    if ($mysqli -> connect_errno) {
-      echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-      exit();
-    }
-
-    if(isset(($_POST['searchterms'])))
-    $sql = "SELECT Class_Name, Class_Ability, Class_HitDice
-            FROM 5eClass
-            WHERE Class_Name LIKE '%" . $_POST['searchterms']. "%'";
-
-    else
-
-    $sql = "SELECT Class_Name, Class_Ability, Class_HitDice FROM 5eClass";
-
-    //retrieve data
-    $result = $mysqli -> query($sql); 
-    
-    ?>
-
-    <!-- Code below displays the data in a table -->
-
-    <table class="table table-striped">
-    <tr>
-      <th style="color:white;background-color:#A0522D">Class Name</th>
-      <th style="color:white;background-color:#A0522D">Primary Ability</th>
-      <th style="color:white;background-color:#A0522D">Hit Dice</th>
-    </tr>
-    <?php while($row = $result->fetch_assoc()):?>
-      <tr>
-        <td><?=$row['Class_Name']?></td>
-        <td><?=$row['Class_Ability']?></td>
-        <td><?=$row['Class_HitDice']?></td>
-      </tr>
-  <?php endwhile;?>
-  </table>
+        <!-- ENTER FORM HERE! -->
 
 
 
 
 
-        </div>  
+        <div class="space"></div>
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
