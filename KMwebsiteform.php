@@ -99,7 +99,7 @@
     </style> 
 
  
-    <body>  
+    <head>  
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">D&D 5e Mini-Wiki</a>
@@ -122,30 +122,22 @@
 
     <?php
 
+    //connecting to sql
+    $mysqli = new
+    mysqli("localhost","2342154","K@cperino60018","db2342154");
 
-    $response = "";
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        // Sanitize and process the inputs
-        if (isset($_POST['name'], $_POST['race'], $_POST['class']) && !empty($_POST['name']) && !empty($_POST['race']) && !empty($_POST['class'])) {
-            $name = htmlspecialchars($_POST['name']); // Sanitize user input
-            $race = htmlspecialchars($_POST['race']);
-            $class = htmlspecialchars($_POST['class']);
-
-            // You could process this data (e.g., save to a database, send an email, etc.)
-            $response = "$name the $race $class has been created!";
-        } else {
-            $response = "Please fill in all the fields (Name, Race and Class).";
-        }
+    //error msg
+    if ($mysqli -> connect_errno) {
+      echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+      exit();
     }
+
     ?>
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+</head>
 <div class = page-padding> 
-
+<body>
     <br>
         Hello, this is the website for Dungeons and Dragons 5e Races and Classes!
         <br>
@@ -154,35 +146,96 @@
         <br>
         This can be done in the form below!
         <div class="space1"></div>
-    <style>
-        
-    </style>
-</head>
-<body>
 
-    <form action="" method="POST">
+        
+        <form action="KMwebsiteform.php" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <input type="text" id="CName" name="name" required value=""><br>
 
         <label for="race">Race:</label>
-        <input type="text" id="race" name="race" required><br>
+        <input type="text" id="CRace" name="race" required value=""><br>
 
         <label for="class">Class:</label>
-        <input type="text" id="class" name="class" required><br>
+        <input type="text" id="CClass" name="class" required value=""><br>
 
 
-        <button type="submit" class="buttonstyle">Submit</button>
+        <button type="submit" class="buttonstyle" value="submit">Submit</button>
     </form>
 
     <div class="space1"></div>
 
     <div id="response">
-        <?php
+
+
+
+    <?php
+
+    $Cname = $_REQUEST['name'];
+    $Crace= $_REQUEST['race'];
+    $Cclass= $_REQUEST['class'];
+
+    if(isset($_POST['name'], $_POST['race'], $_POST['class'])) {
+        $insert_sql =  "INSERT INTO 5e_Character (Char_Name, Char_Race, Char_Class)
+        VALUES ('$Cname', '$Crace', '$Cclass')";
+
+        if ($mysqli->query($insert_sql)) { 
+            echo "Well Done!";
+        } 
+        
+        else {
+            echo "Error: " . $mysqli->error;
+        }
+    }
+
+
+    $response = "";
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Sanitize and process the inputs
+            
+                $name = htmlspecialchars($_POST['name']); // Sanitize user input
+                $race = htmlspecialchars($_POST['race']);
+                $class = htmlspecialchars($_POST['class']);
+
+                if (!empty($_POST['name']) && !empty($_POST['race']) && !empty($_POST['class'])) {
+
+                // You could process this data (e.g., save to a database, send an email, etc.)
+                $response = "$name the $race $class has been created!";
+            } else {
+                $response = "Please fill in all the fields (Name, Race and Class).";
+            }
+        }
+
         // Display the response message after form submission
         if (!empty($response)) {
             echo "<p>$response</p>";
+
         }
+
+        $sql = "SELECT Char_Name, Char_Race, Char_Class FROM 5e_Character";
+
+
+        //retrieve data 
+        $result = $mysqli -> query($sql); 
         ?>
+
+
+
+
+    <table class="table table-striped">
+    <tr>
+      <th>Character Name</th>
+      <th>Character Race</th>
+      <th>Character Class</th>
+    </tr>
+    <?php while($row = $result->fetch_assoc()):?>
+      <tr>
+        <td><?=$row['Char_Name']?></td>
+        <td><?=$row['Char_Race']?></td>
+        <td><?=$row['Char_Class']?></td>
+      </tr>
+  <?php endwhile;?>
+  </table>
+
     </div>
 </div>
 
