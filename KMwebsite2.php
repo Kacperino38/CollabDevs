@@ -33,6 +33,7 @@
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
+            background: linear-gradient(90deg, rgba(250,195,125,1) 0%, rgba(250,195,125,1) 50%, rgba(210,170,125,1) 80%);
         }
 
         .navbar-brand {

@@ -35,6 +35,7 @@
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
+            background: linear-gradient(90deg, rgba(250,195,125,1) 0%, rgba(250,195,125,1) 50%, rgba(210,170,125,1) 80%);
         }
 
         .navbar-brand {
@@ -213,7 +214,6 @@
 
         $sql = "SELECT Char_Name, Char_Race, Char_Class FROM 5e_Character";
 
-
         //retrieve data 
         $result = $mysqli -> query($sql); 
         ?>
@@ -235,6 +235,36 @@
       </tr>
   <?php endwhile;?>
   </table>
+
+    <button class="buttonstyle" onclick="deletefunction(); redirect()">Delete all Custom Characters!</button>
+
+
+    <!-- THIS IS THE SCRIPT FOR DELETING (AJAX)-->
+
+    <script>
+
+        function deletefunction() {
+    // Make an AJAX request to the server
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "KMwebsitedelete.php", true); // Sending data to delete_characters.php
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            alert(xhr.responseText); // Alert the response from the server
+        } else {
+            alert("Error: " + xhr.status);
+        }
+    };
+
+    xhr.send("action=delete"); // Sending action parameter to PHP
+}
+
+    function redirect(){
+        window.location.replace("KMwebsitehomepage.php");
+    }
+
+    </script>
 
     </div>
 </div>

@@ -33,6 +33,7 @@
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
+            background: linear-gradient(90deg, rgba(250,195,125,1) 0%, rgba(250,195,125,1) 50%, rgba(210,170,125,1) 80%);
         }
 
         .navbar-brand {
@@ -65,6 +66,38 @@
             font-weight: bold;
         }
  
+        .imgstyle{
+            width:100%;
+        }
+
+        .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+ 
+        .contentl {
+        flex: 1 1 calc(50% - 5px); /* Adjust width dynamically */
+        padding: 10px;
+        padding right: 15px;
+        font-size: 17px;
+        }
+
+        .contentlt {
+        font-size: 28px;
+        }
+
+        .contentr {
+        flex: 1 1 calc(40% - 25px); /* Adjust width dynamically */
+        padding: 20px;
+        }
+
+        img {
+        width: 365px;
+        height: 618px;
+        }
+        
+
     </style> 
      
     <head> 
@@ -94,23 +127,43 @@
     </nav>
 
 
-        <div class = page-padding> 
-                
+    <div class = page-padding> 
+        <div class="content-wrapper">
+        <div class="contentl">
         <br>
+        <div class="contentlt">
         Hello, this is the website for Dungeons and Dragons 5e Races and Classes!
+        </div>
+        <br>
+        <br>
+        This small wiki lists all the races and classes available for 5e Dungeons and Dragons.
+        Click on the links above to be directed to the tables!
+        <br>
+        <br>
+        The last page is for all users to post their own customs combinations to use for Characters!
+        <br>
+        </div>
+
+        <div class="contentr">
+        <img src="fighter-removebg-preview.png">
+
+        </div>
+
         <br>
         <br>
         <br>
-        This small wiki lists all the races and classes available in the PHB for 5e Dungeons and Dragons!
         <br>
-        Click on the links above to be directed to the table!
-        <br>
-        <br>
-        The last page is to save your own combinations to use for your own characters!
-        <br>
-<div class="space"></div>
+
+        </div>
+    </div>
 
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body> 
+     
+   
+
+
+
+    

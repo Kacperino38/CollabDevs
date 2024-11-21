@@ -27,6 +27,7 @@
             padding-right: 60px; 
 			background-color: rgb(255, 239, 213); 
 
+
         } 
 
         .space { 
@@ -36,6 +37,7 @@
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
+            background: linear-gradient(90deg, rgba(250,195,125,1) 0%, rgba(250,195,125,1) 50%, rgba(210,170,125,1) 80%);
         }
 
         .navbar-brand {
@@ -47,6 +49,7 @@
         .navbar .btn-outline-success {
             color: black;
             border-color: rgb(140, 120, 90);
+      
         }
 
         .navbar .btn-outline-success:hover {
