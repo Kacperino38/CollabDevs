@@ -29,7 +29,7 @@
 
         } 
 
-        .space { margin-top: 100px; }
+        .space { margin-top: 250px; }
 
         .navbar {
             background-color: rgb(210, 170, 125) !important;
@@ -96,6 +96,14 @@
         width: 365px;
         height: 618px;
         }
+
+        .buttonstyle{
+            padding: 3px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #c6541c;
+        }
         
 
     </style> 
@@ -142,6 +150,14 @@
         <br>
         The last page is for all users to post their own customs combinations to use for Characters!
         <br>
+        <div class="space"></div>
+
+        <button type="button" class="buttonstyle"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display the Date and Time</button>
+        <br>
+        <p id="demo"></p>
+
         </div>
 
         <div class="contentr">

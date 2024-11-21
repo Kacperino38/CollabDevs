@@ -133,10 +133,12 @@
     //retrieve data
     $result = $mysqli -> query($sql); 
     
+
     ?>
 
     <!-- Code below displays the data in a table -->
 
+  
     <table class="table table-striped">
     <tr>
       <th style="color:white;background-color:#A0522D">Class Name</th>
@@ -151,7 +153,6 @@
       </tr>
   <?php endwhile;?>
   </table>
-
 
 
 

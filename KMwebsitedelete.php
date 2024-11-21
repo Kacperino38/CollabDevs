@@ -21,8 +21,6 @@
     
         if ($conn->query($sql) === TRUE) {
             echo "All customer characters deleted successfully.";
-            header("Location: https://example.com/myOtherPage.php");
-        die();
 
         }
     
