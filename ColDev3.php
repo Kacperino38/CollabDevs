@@ -95,6 +95,8 @@
         </div>
         </div>
         </div>
+                <!---Code for searchbar not yet working as no data is in place--->
+
         <form class="d-flex" role="search" action="ColDev1.php" method="get">
       <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
       value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">

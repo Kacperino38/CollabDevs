@@ -14,7 +14,7 @@
         }       
  
         body{ 
-            background-color: rgb(225, 226, 250);
+            background-color: rgb(230, 242, 255);
 
         } 
  
@@ -31,13 +31,13 @@
 
         } 
 
-        .space { 
+        .space {    /* Adjust width dynamically */
           margin-top: 100px; 
         }
 
 
-        .navbar {
-            background-color: rgb(191, 212, 252) !important;
+        .navbar {   /* This and code below is for the look and size of the navbar */
+            background-color: rgb(128, 191, 255) !important;
         }
 
         .navbar-brand {
@@ -84,16 +84,12 @@
         padding: 20px;
         }
 
-        img {
-        width: 365px;
-        height: 618px;
-        }
-
-        .content-wrapper {
+        .content-wrapper {  /* The code that wraps the content */
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         }
+
 
  
     </style> 
@@ -109,7 +105,9 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+    
     <a class="navbar-brand" href="#">Colab Dev project PAGE 1</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -121,11 +119,7 @@
         </div>
         </div>
         </div>
-        <form class="d-flex" role="search" action="ColDev1.php" method="get">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
-      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
 
-      <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     </nav>
     </nav>
@@ -137,13 +131,14 @@
 
         <div class="content-wrapper">
 
-
+        <!---Left content--->
         <div class="contentl">
         WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
+        <br>
         </div>
        
         
-
+        <!---Right content--->
         <div class="contentr">
         Hello this is the colab dev project
             <br>
@@ -156,8 +151,11 @@
             <br>
             <br>
             This cannot be seen on the website :3
-
         </div>
+        <marquee direction="right">
+        <div class="space"></div>
+        - APPLY NOW -
+        </marquee>
         </div>
 
 
