@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html lang="en"> 
 <meta charset="utf-8">
@@ -69,6 +70,31 @@
             font-size: 20px;
             font-weight: bold;
         }
+
+        .contentl {
+        flex: 1 1 calc(50% - 5px); /* Adjust width dynamically */
+        padding: 10px;
+        padding right: 15px;
+        font-size: 47px;
+        }
+
+
+        .contentr {
+        flex: 1 1 calc(40% - 25px); /* Adjust width dynamically */
+        padding: 20px;
+        }
+
+        img {
+        width: 365px;
+        height: 618px;
+        }
+
+        .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
  
     </style> 
      
@@ -108,16 +134,34 @@
 
         <div class = page-padding> 
         <br>    
-Hello this is the colab dev project
-<br>
-We are hoping to soon fill all of these pages with content! 
-<div class="space"></div>
- 
-<br>
 
-Below this is the code to connect to the SQL database, this will be rewritten soon!
-<br>
-This cannot be seen on the website :3
+        <div class="content-wrapper">
+
+
+        <div class="contentl">
+        WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
+        </div>
+       
+        
+
+        <div class="contentr">
+        Hello this is the colab dev project
+            <br>
+            <br>
+            We are hoping to soon fill all of these pages with content! 
+            <div class="space"></div>
+            
+            <br>
+            Below this is the code to connect to the SQL database, this will be rewritten soon!
+            <br>
+            <br>
+            This cannot be seen on the website :3
+
+        </div>
+        </div>
+
+
+
 <?php
 
 //connecting to sql
