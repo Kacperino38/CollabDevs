@@ -89,6 +89,39 @@
         flex-wrap: wrap;
         gap: 20px;
         }
+        
+        .imgscroll {
+          height:10px;
+          width: auto;
+        }
+
+        .scroll-container-container {
+          padding-left: 240px; 
+          padding-right: 240px;
+        }
+
+        .scroll-container {
+          background-color: rgb(242, 241, 247); 
+          overflow: auto;
+          white-space: nowrap;
+          padding: 10px;
+        }
+
+        .scroll-container img {
+          padding: 5px;
+        }
+
+        
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgb(230, 242, 255);
+          color: white;
+          padding-left: 40px; 
+          padding-right: 40px;
+        }
 
 
  
@@ -152,11 +185,24 @@
             <br>
             This cannot be seen on the website :3
         </div>
-        <marquee direction="right">
-        <div class="space"></div>
-        - APPLY NOW -
-        </marquee>
+
+        <div class="footer">
+  <div class="scroll-container">
+        <img src="IMG_4852" style="height:220px; width:auto">
+        <img src="IMG_4856" style="height:220px; width:auto">
+        <img src="IMG_4857" style="height:220px; width:auto">
+        <img src="IMG_4851" style="height:220px; width:auto">
+        <img src="IMG_4860" style="height:220px; width:auto">
+        <img src="IMG_4859" style="height:220px; width:auto">
+        <img src="IMG_4861" style="height:220px; width:auto">
+        <img src="IMG_4863" style="height:220px; width:auto">
+        <img src="IMG_4862" style="height:220px; width:auto">
+        <img src="IMG_4864" style="height:220px; width:auto">
         </div>
+  </div>
+
+        </div>
+
 
 
 
