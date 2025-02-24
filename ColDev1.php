@@ -37,7 +37,7 @@
 
 
         .navbar {   /* This and code below is for the look and size of the navbar */
-            background-color: rgb(128, 191, 255) !important;
+            background-color: rgb(162, 208, 254) !important;
         }
 
         .navbar-brand {
@@ -71,17 +71,15 @@
             font-weight: bold;
         }
 
-        .contentl {
-        flex: 1 1 calc(50% - 5px); /* Adjust width dynamically */
+        .contenth {
         padding: 10px;
-        padding right: 15px;
-        font-size: 47px;
+        font-size: 46px;
         }
 
 
-        .contentr {
-        flex: 1 1 calc(40% - 25px); /* Adjust width dynamically */
+        .contentt {
         padding: 20px;
+        font-size: 20px;
         }
 
         .content-wrapper {  /* The code that wraps the content */
@@ -113,14 +111,13 @@
 
         
         .footer {
-          position: fixed;
-          left: 0;
-          bottom: 0;
+          bottom: 0px;
           width: 100%;
           background-color: rgb(230, 242, 255);
           color: white;
           padding-left: 40px; 
           padding-right: 40px;
+          padding-bottom: 40px;
         }
 
 
@@ -165,14 +162,14 @@
         <div class="content-wrapper">
 
         <!---Left content--->
-        <div class="contentl">
+        <div class="contenth">
         WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
         <br>
         </div>
        
         
         <!---Right content--->
-        <div class="contentr">
+        <div class="contentt">
         Hello this is the colab dev project
             <br>
             <br>
@@ -185,9 +182,10 @@
             <br>
             This cannot be seen on the website :3
         </div>
-
+        </div>
+        </div>
         <div class="footer">
-  <div class="scroll-container">
+    <div class="scroll-container">
         <img src="IMG_4852" style="height:220px; width:auto">
         <img src="IMG_4856" style="height:220px; width:auto">
         <img src="IMG_4857" style="height:220px; width:auto">
@@ -199,9 +197,9 @@
         <img src="IMG_4862" style="height:220px; width:auto">
         <img src="IMG_4864" style="height:220px; width:auto">
         </div>
-  </div>
+    </div>
 
-        </div>
+        
 
 
 
