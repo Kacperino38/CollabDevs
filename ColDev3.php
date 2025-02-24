@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title> ColabDev_Website3 </title> 
     <link rel="icon" type="image/jpg" href="favicon.jpg">
@@ -35,6 +35,9 @@
           margin-top: 100px; 
         }
 
+    .spaces {    
+      margin-top: 50px; 
+    }
 
         .navbar {
           background-color: rgb(250, 195, 125) !important;
@@ -112,10 +115,10 @@
         <div class = page-padding> 
         <br>    
 Hello this is the colab dev project
-<div class="space"></div>
+<div class="spaces"></div>
  
 <br>
-Third page of content yuh
+Third page of content yuh, this will contain a database filled with inforamtion about the open day, teachers and subjects!
 <br>
 
 
