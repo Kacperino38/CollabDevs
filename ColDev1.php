@@ -7,119 +7,127 @@
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
- 
-        * { 
-    padding:0; 
-    margin:0;   
-        }       
- 
-        body{ 
-            background-color: rgb(230, 242, 255);
+ * { 
+      padding: 0; 
+      margin: 0;   
+    }
 
-        } 
- 
- 
-        .page-padding { 
-			margin-left: 12%; 
-			margin-right: 12%; 
-			padding-bottom: 80px; 
-            padding-top: 4px; 
-            padding-left: 60px; 
-            padding-right: 60px; 
-			background-color: rgb(245, 245, 251); 
+    body { 
+      background-color: rgb(230, 242, 255);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up full height */
+    } 
 
+    .page-padding { 
+      margin-left: 12%; 
+      margin-right: 12%; 
+      padding-bottom: 40px; 
+      padding-top: 4px; 
+      padding-left: 60px; 
+      padding-right: 60px; 
+      background-color: rgb(245, 245, 251); 
+      flex-grow: 1; /* This will push the footer down */
+    }
 
-        } 
+    .space {    
+      margin-top: 100px; 
+    }
 
-        .space {    /* Adjust width dynamically */
-          margin-top: 100px; 
-        }
+    .spaces {    
+      margin-top: 50px; 
+    }
 
+    .navbar {   
+      background-color: rgb(162, 208, 254) !important;
+    }
 
-        .navbar {   /* This and code below is for the look and size of the navbar */
-            background-color: rgb(162, 208, 254) !important;
-        }
+    .navbar-brand {
+      color: black;
+      font-weight: bold;
+      font-size: 30px;
+    }
 
-        .navbar-brand {
-            color: black;
-            font-weight: bold;
-            font-size: 30px;
-        }
+    .navbar .btn-outline-success {
+      color: black;
+      border-color: rgb(140, 120, 90);
+    }
 
-        .navbar .btn-outline-success {
-            color: black;
-            border-color: rgb(140, 120, 90);
-      
-        }
+    .navbar .btn-outline-success:hover {
+      color: black;
+      font-weight: bold;
+      border-color: black;
+      background-color: rgb(140, 120, 90);
+    }
 
-        .navbar .btn-outline-success:hover {
-            color: black;
-            font-weight: bold;
-            border-color: black;
-            background-color: rgb(140, 120, 90);
+    .nav-link {
+      color: black;
+      font-size: 18px;
+    }
 
-        }
+    .nav-link:hover {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-        .nav-link {
-            color: black;
-            font-size: 18px;
-        }
+    .contenth {
+      padding: 10px;
+      font-size: 50px;
+    }
 
-        .nav-link:hover {
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-        }
+    .contentt {
+      padding: 20px;
+      font-size: 24px;
+    }
 
-        .contenth {
-        padding: 10px;
-        font-size: 50px;
-        }
+    .content-wrapper {  
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
+    .imgscroll {
+      height: 10px;
+      width: auto;
+    }
 
-        .contentt {
-        padding: 20px;
-        font-size: 24px;
-        }
+    .scroll-container-container {
+      padding-left: 240px; 
+      padding-right: 240px;
+    }
 
-        .content-wrapper {  /* The code that wraps the content */
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        }
-        
-        .imgscroll {
-          height:10px;
-          width: auto;
-        }
+    .scroll-container {
+      background-color: rgb(242, 241, 247); 
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
 
-        .scroll-container-container {
-          padding-left: 240px; 
-          padding-right: 240px;
-        }
+    .scroll-container img {
+      padding: 5px;
+    }
 
-        .scroll-container {
-          background-color: rgb(242, 241, 247); 
-          overflow: auto;
-          white-space: nowrap;
-          padding: 10px;
-        }
+    .footer {
+      background-color: rgb(230, 242, 255);
+      color: white;
+      padding-left: 50px; 
+      padding-right: 50px;
+      padding-bottom: 2px;
+      width: 100%;
+      background-color: rgb(230, 242, 255);
+    }
 
-        .scroll-container img {
-          padding: 5px;
-        }
-
-        
-        .footer {
-          bottom: 0px;
-          width: 100%;
-          background-color: rgb(230, 242, 255);
-          color: white;
-          padding-left: 40px; 
-          padding-right: 40px;
-          padding-bottom: 40px;
-        }
-
+    .button {
+      background-color: rgb(162, 208, 254);
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+      color: black;
+      font-size: 36px;
+      text-decoration: none;
+      padding: 8px 8px;
+    }
 
  
     </style> 
@@ -136,7 +144,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     
-    <a class="navbar-brand" href="#">Colab Dev project PAGE 1</a>
+    <a class="navbar-brand" href="#">Colab Dev Project PAGE 1</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -161,25 +169,31 @@
 
         <div class="content-wrapper">
 
-        <!---Left content--->
+        <!---Heading content--->
         <div class="contenth">
         WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
-        <br>
+        <div class="spaces"></div>
          <h1> Open Day Dates </h1>
+        
+         <br>
+         <br>
+      
 
-<a href="ColDev2.php"></a>
-<button style="font: size 25px;background-color: rgb(255, 255, 0);">book now</button>
+<a href="ColDev2.php" class="button">Book Now new</a>
+
+<a href="ColDev2.php" ></a>
+<button style="font: size 25px;background-color: rgb(255, 255, 0);">Book Now old</button>
 		
         </div>
        
         
-        <!---Right content--->
+        <!---Normal content--->
         <div class="contentt">
         Hello this is the colab dev project
             <br>
             <br>
             We are hoping to soon fill all of these pages with content! 
-            <div class="space"></div>
+            <div class="spaces"></div>
             
             <br>
             Below this is the code to connect to the SQL database, this will be rewritten soon!
@@ -189,20 +203,7 @@
         </div>
         </div>
         </div>
-        <div class="footer">
-    <div class="scroll-container">
-        <img src="IMG_4852" style="height:220px; width:auto">
-        <img src="IMG_4856" style="height:220px; width:auto">
-        <img src="IMG_4857" style="height:220px; width:auto">
-        <img src="IMG_4851" style="height:220px; width:auto">
-        <img src="IMG_4860" style="height:220px; width:auto">
-        <img src="IMG_4859" style="height:220px; width:auto">
-        <img src="IMG_4861" style="height:220px; width:auto">
-        <img src="IMG_4863" style="height:220px; width:auto">
-        <img src="IMG_4862" style="height:220px; width:auto">
-        <img src="IMG_4864" style="height:220px; width:auto">
-        </div>
-    </div>
+        
 
         
 
@@ -267,6 +268,21 @@ This is the template for the database part!!!!
   -->
 
         </div>
+
+        <div class="footer">
+    <div class="scroll-container">
+        <img src="IMG_4852" style="height:220px; width:auto">
+        <img src="IMG_4856" style="height:220px; width:auto">
+        <img src="IMG_4857" style="height:220px; width:auto">
+        <img src="IMG_4851" style="height:220px; width:auto">
+        <img src="IMG_4860" style="height:220px; width:auto">
+        <img src="IMG_4859" style="height:220px; width:auto">
+        <img src="IMG_4861" style="height:220px; width:auto">
+        <img src="IMG_4863" style="height:220px; width:auto">
+        <img src="IMG_4862" style="height:220px; width:auto">
+        <img src="IMG_4864" style="height:220px; width:auto">
+        </div>
+    </div>
 
 <?php
 
