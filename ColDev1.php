@@ -1,9 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title> ColabDev_Website1 </title> 
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
  
@@ -72,13 +73,13 @@
 
         .contenth {
         padding: 10px;
-        font-size: 46px;
+        font-size: 50px;
         }
 
 
         .contentt {
         padding: 20px;
-        font-size: 20px;
+        font-size: 24px;
         }
 
         .content-wrapper {  /* The code that wraps the content */
@@ -164,7 +165,8 @@
         <div class="contenth">
         WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
         <br>
-         <h1> open day dates </h1>
+         <h1> Open Day Dates </h1>
+
 <a href="ColDev2.php"></a>
 <button style="font: size 25px;background-color: rgb(255, 255, 0);">book now</button>
 		
