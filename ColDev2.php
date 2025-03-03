@@ -7,74 +7,129 @@
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
- 
-        * { 
-    padding:0; 
-    margin:0;   
-        }       
- 
-        body{ 
-            background-color: rgb(255, 228, 181);
+  * { 
+      padding: 0; 
+      margin: 0;   
+    }
 
-        } 
- 
- 
-        .page-padding { 
-			margin-left: 12%; 
-			margin-right: 12%; 
-			padding-bottom: 80px; 
-            padding-top: 4px; 
-            padding-left: 60px; 
-            padding-right: 60px; 
-			background-color: rgb(255, 239, 213); 
+    body { 
+      background-color: rgb(230, 242, 255);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up full height */
+    } 
+
+    .page-padding { 
+      margin-left: 12%; 
+      margin-right: 12%; 
+      padding-bottom: 40px; 
+      padding-top: 4px; 
+      padding-left: 60px; 
+      padding-right: 60px; 
+      background-color: rgb(245, 245, 251); 
+      flex-grow: 1; /* This will push the footer down */
+    }
+
+    .space {    
+      margin-top: 100px; 
+    }
+
+    .spaces {    
+      margin-top: 50px; 
+    }
+
+    .navbar {   
+      background-color: rgb(162, 208, 254) !important;
+    }
+
+    .navbar-brand {
+      color: black;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .navbar .btn-outline-success {
+      color: black;
+      border-color: rgb(140, 120, 90);
+    }
+
+    .navbar .btn-outline-success:hover {
+      color: black;
+      font-weight: bold;
+      border-color: black;
+      background-color: rgb(140, 120, 90);
+    }
+
+    .nav-link {
+      color: black;
+      font-size: 18px;
+    }
+
+    .nav-link:hover {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+        .contenth {
+      padding: 10px;
+      font-size: 50px;
+    }
+
+    .contentt {
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    .content-wrapper {  
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .imgscroll {
+      height: 10px;
+      width: auto;
+    }
+
+    .scroll-container-container {
+      padding-left: 240px; 
+      padding-right: 240px;
+    }
+
+    .scroll-container {
+      background-color: rgb(242, 241, 247); 
+      overflow: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
+
+    .scroll-container img {
+      padding: 5px;
+    }
+
+    .footer {
+      background-color: rgb(230, 242, 255);
+      color: white;
+      padding-left: 50px; 
+      padding-right: 50px;
+      padding-bottom: 2px;
+      width: 100%;
+      background-color: rgb(230, 242, 255);
+    }
+
+    .button {
+      background-color: rgb(162, 208, 254);
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+      color: black;
+      font-size: 36px;
+      text-decoration: none;
+      padding: 8px 8px;
+    }
 
 
-        } 
-
-        .space { 
-          margin-top: 100px; 
-        }
-
-      
-        .spaces {    
-          margin-top: 50px; 
-        }
-
-        .navbar {
-          background-color: rgb(250, 195, 125) !important;
-        }
-
-        .navbar-brand {
-            color: black;
-            font-weight: bold;
-            font-size: 30px;
-        }
-
-        .navbar .btn-outline-success {
-            color: black;
-            border-color: rgb(140, 120, 90);
-      
-        }
-
-        .navbar .btn-outline-success:hover {
-            color: black;
-            font-weight: bold;
-            border-color: black;
-            background-color: rgb(140, 120, 90);
-
-        }
-
-        .nav-link {
-            color: black;
-            font-size: 18px;
-        }
-
-        .nav-link:hover {
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-        }
- 
     </style> 
      
     <head> 
@@ -114,14 +169,66 @@
 
 
         <div class = page-padding> 
-        <br>    
+        <br>
+<div class = contenth>    
 Hello this is the colab dev project
+</div>
 <div class="spaces"></div>
 
-Second page of the content yipee, this will be filled with information about the university, as well as city of Wolverhampton!
+<div class = contentt>
+Second page of content yuh, this will contain a database filled with information about the open day, teachers and subjects!
+</div>
+
+<div class="spaces"></div>
+
+<?php
+//connecting to sql (php my admin) 
+
+    $mysqli = new
+    mysqli("localhost","2342154","K@cperino60018","db2342154"); 
+
+ //error msg
+ if ($mysqli -> connect_errno) {
+  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+  exit();
+}
+
+//retrieve data (display below) 
+
+    $sql = "SELECT Lecturer_ID, Lecturer_Name, Subject_Name FROM LecturersTable"; 
+    $result = $mysqli -> query($sql); ?>
+    
+    
+
+<table class="table table-striped table-info"> 
+
+    <tr> 
+
+      <th>Lecturer ID</th> 
+      <th>Lecturer Name</th> 
+      <th>Subject</th> 
 
 
-<img src="IMG_4859" style="height:600px">
+    </tr> 
+
+    <?php while($row = $result->fetch_assoc()):?> 
+
+      <tr> 
+
+        <td><?=$row['Lecturer_ID']?></td> 
+        <td><?=$row['Lecturer_Name']?></td> 
+        <td><?=$row['Subject_Name']?></td> 
+
+      </tr> 
+
+  <?php endwhile;?> 
+
+  </table> 
+
+
+<div class="space"></div>
+
+<img src="IMG_4859" style="height:220px; width:auto">
 
 
 
