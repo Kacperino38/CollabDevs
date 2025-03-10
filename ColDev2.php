@@ -62,12 +62,12 @@
 
     .nav-link {
       color: black;
-      font-size: 18px;
+      font-size: 22px;
     }
 
     .nav-link:hover {
       color: black;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
     }
   
@@ -78,7 +78,17 @@
 
     .contentt {
       padding: 20px;
-      font-size: 24px;
+      font-size: 22px;
+    }
+
+    .tablel{
+      flex: 1 1 calc(40% - 5px); /* Adjust width dynamically */
+        padding: 5px;
+    }
+
+    .tabler{
+      flex: 1 1 calc(40% - 25px); /* Adjust width dynamically */
+        padding: 5px;
     }
 
     .content-wrapper {  
@@ -124,7 +134,7 @@
       border-color: black;
       border-width: 2px;
       color: black;
-      font-size: 36px;
+      font-size: 40px;
       text-decoration: none;
       padding: 8px 8px;
     }
@@ -150,8 +160,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="ColDev1.php">Homepage</a>
-        <a class="nav-link" href="ColDev2.php">Second Page</a>
-        <a class="nav-link" href="ColDev3.php">Third Page</a>
+        <a class="nav-link" href="ColDev2.php">Subject Talks</a>
+        <a class="nav-link" href="ColDev3.php">Information</a>
         </div>
         </div>
         </div>
@@ -171,12 +181,19 @@
         <div class = page-padding> 
         <br>
 <div class = contenth>    
-Hello this is the colab dev project
+Subjects and Open Day Talks!
 </div>
 <div class="spaces"></div>
 
 <div class = contentt>
-Second page of content yuh, this will contain a database filled with information about the open day, teachers and subjects!
+Here you can find all the times for the talks at the University of Wolverhampton
+<br>
+The table on the left has the names of the lecturers that are representing subjects
+<br>
+The table on the right has the times and locations for all the talks taking place during our open day season!
+<br>
+<br>
+If you wish to sign up for the talks as well as recieve more information about the Open Day, find the Book Now button below! 
 </div>
 
 <div class="spaces"></div>
@@ -197,14 +214,14 @@ Second page of content yuh, this will contain a database filled with information
 
     $sql = "SELECT Lecturer_ID, Lecturer_Name, Subject_Name FROM LecturersTable"; 
     $result = $mysqli -> query($sql); ?>
-    
-    
+
+<div class="content-wrapper">
+<div class="tablel"> 
 
 <table class="table table-striped table-info"> 
 
     <tr> 
 
-      <th>Lecturer ID</th> 
       <th>Lecturer Name</th> 
       <th>Subject</th> 
 
@@ -215,7 +232,6 @@ Second page of content yuh, this will contain a database filled with information
 
       <tr> 
 
-        <td><?=$row['Lecturer_ID']?></td> 
         <td><?=$row['Lecturer_Name']?></td> 
         <td><?=$row['Subject_Name']?></td> 
 
@@ -224,7 +240,10 @@ Second page of content yuh, this will contain a database filled with information
   <?php endwhile;?> 
 
   </table> 
+  </div>
 
+
+<div class="tabler">
 
 <?php
 
@@ -255,19 +274,15 @@ Second page of content yuh, this will contain a database filled with information
 
       <?php endwhile;?> 
 
-      </table> 
-
-
+      </table>  
+      </div>
+      </div>
 
 <div class="space"></div>
 
-<img src="IMG_4859" style="height:220px; width:auto">
+<a href="ColDev4.php" class="button">Book Now</a>
 
-
-
-        </div>
-
-
+      </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body> 

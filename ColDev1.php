@@ -62,28 +62,29 @@
 
     .nav-link {
       color: black;
-      font-size: 18px;
+      font-size: 22px;
     }
 
     .nav-link:hover {
       color: black;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
     }
 
     .contenth1 {
       padding: 10px;
-      font-size: 42px;
+      font-size: 46px;
     }
 
     .contenth2 {
       padding: 10px;
+      padding-bottom: 0px;
       font-size: 20px;
     }
 
     .contentt {
       padding: 20px;
-      font-size: 24px;
+      font-size: 22px;
     }
 
     .content-wrapper {  
@@ -157,8 +158,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="ColDev1.php">Homepage</a>
-        <a class="nav-link" href="ColDev2.php">Second Page</a>
-        <a class="nav-link" href="ColDev3.php">Third Page</a>
+        <a class="nav-link" href="ColDev2.php">Subject Talks</a>
+        <a class="nav-link" href="ColDev3.php">Information</a>
         </div>
         </div>
         </div>
@@ -179,23 +180,16 @@
         <div class="contenth2">
         WELCOME TO THE 
         </div>
-        <div class="cotenth1">
+        <br>
+        <br>
+        <div class="contenth1">
         UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
+       </div>
 
 
 
-        <div class="spaces"></div>
-         <h1> Open Day Dates </h1>
-        
-         <br>
-         <br>
+        <div class="space"></div>
       
-
-<a href="ColDev4.php" class="button">Book Now new</a>
-
-<a href="ColDev2.php" ></a>
-<button style="font: size 25px;background-color: rgb(255, 255, 0);">Book Now old</button>
-		
         </div>
        
         
@@ -206,13 +200,6 @@
             <br>
             We are hoping to soon fill all of these pages with content! 
             <div class="spaces"></div>
-            
-            <br>
-            Below this is the code to connect to the SQL database, this will be rewritten soon!
-            <br>
-            <br>
-            This cannot be seen on the website :3
-        </div>
         </div>
         </div>
         

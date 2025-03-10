@@ -67,12 +67,12 @@
 
         .nav-link {
             color: black;
-            font-size: 18px;
+            font-size: 22px;
         }
 
         .nav-link:hover {
             color: black;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
         }
  
@@ -89,26 +89,24 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+
     <a class="navbar-brand" href="#">OpenDayWLV!</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="ColDev1.php">Homepage</a>
-        <a class="nav-link" href="ColDev2.php">Second Page</a>
-        <a class="nav-link" href="ColDev3.php">Third Page</a>
+        <a class="nav-link" href="ColDev2.php">Subject Talks</a>
+        <a class="nav-link" href="ColDev3.php">Information</a>
         </div>
         </div>
         </div>
-                <!---Code for searchbar not yet working as no data is in place--->
 
-        <form class="d-flex" role="search" action="ColDev1.php" method="get">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
-      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
 
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+        
     </nav>
     </nav>
 
@@ -116,11 +114,12 @@
 
         <div class = page-padding> 
         <br>    
-Hello this is the colab dev project
+
+<p>Hello this is the colab dev project</p>
+
 <div class="spaces"></div>
  
 <br>
-
 Third page of the content yipee, this will be filled with information about the university, as well as city of Wolverhampton!
 <br>
 

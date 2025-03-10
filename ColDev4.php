@@ -67,7 +67,7 @@
 
         .nav-link {
             color: black;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .nav-link:hover {
@@ -76,6 +76,19 @@
             font-weight: bold;
         }
  
+        input[type="text"], input[type="number"], input[type="tel"], input[type="date"] textarea {
+            width: 100%; /* Makes them stretch to the full width of the parent container */
+            padding: 12px; /* Adds some padding for a nicer look */
+            margin-bottom: 18px; /* Adds space below each input */
+            border: 2px solid #ccc; /* Simple border around inputs */
+            box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+        }
+
+        form {
+            max-width: 500px; /* Max width to make the form look more compact */
+            padding: 10px;
+        }
+
     </style> 
      
     <head> 
@@ -96,19 +109,14 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="ColDev1.php">Homepage</a>
-        <a class="nav-link" href="ColDev2.php">Second Page</a>
-        <a class="nav-link" href="ColDev3.php">Third Page</a>
+        <a class="nav-link" href="ColDev2.php">Subject Talks</a>
+        <a class="nav-link" href="ColDev3.php">Information</a>
         </div>
         </div>
         </div>
                 <!---Code for searchbar not yet working as no data is in place--->
 
-        <form class="d-flex" role="search" action="ColDev1.php" method="get">
-      <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
-      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
-
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+      
     </nav>
     </nav>
 
@@ -117,30 +125,34 @@
         <div class = page-padding> 
         <br>    
         This is the page for the form
-UOMAN KHANS CODE --
+      <!-- UOMAN KHANS CODE -->
 		<form action="ColDev4.php" method="post">
 
-  <label for="first name ">First name :</label>
+  <div class= formstyle>
+
+  <label for="first name "> First name :</label>
   <input type="text"  id="first name " required placeholder="e.g uoman "><br>
-  <label for="last name ">Last Name:</label>
-  <input type="text" name="last name " id="last name"   required placeholder="khan"><br>
+  <label for="last name "> Last Name:</label>
+  <input type="text" name="last name " id="last name"   required placeholder="e.g khan"><br>
   <label for="email"> Email Address:</label>
   <input type="text" name="email " id="email " placeholder="EmailName@gmail.com"><br>
-  <label for="phone">Mobile Number:   </label>
-  <input type="tel" name="tel"  id="phone" placeholder="07400 123456"><br>
+  <label for="phone"> Mobile Number:   </label>
+  <input type="tel" name="tel"  id="phone" placeholder="07485 123456"><br>
   <label for="bday"> Date Of Birth:  </label>
   <input type="date" id="bday"><br>
-  <label for="country"> country  </label>
+  <label for="country"> Country of Origin  </label>
   <input type="text" name="country" id="country" placeholder="United Kingdom "><br>
-  <label for="guest">Number Of Guest Coming </label>
-  <input type="number" id="guest" min="0" max="4"><br>
-  <label for="sub">Main Subject Of Intrest </label>
-  <input type="text" name="sub" id="sub"  placeholder="computer science "><br>
- <label for="level">  Level Of Intrest </label>
- <input type="text" name="level" id="level" placeholder="Masters"><br>
-Please write a comment for 100 words talking about what you want to do in 
-Univercity in terms of study and hobbies <br>
+  <label for="guest"> Number of Guests </label>
+  <input type="number" id="guest" min="0" max="2"><br>
+  <label for="sub"> Subjects </label>
+  <input type="text" name="sub" id="sub"  placeholder="Computer Science etc.. "><br>
+ <label for="level"> Level of Study </label>
+ <input type="text" name="level" id="level" placeholder="Undergraduate etc.."><br>
+Please write around 100 words, tell us about what you want to do in 
+University in terms of your study, as well as your hobbies and interests <br>
 <textarea name="comment" id="comment "></textarea>
+
+      </div>
 
 
 
