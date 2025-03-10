@@ -3,7 +3,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title> ColabDev_Website2 </title> 
+    <title> OpenDay2.com </title> 
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
@@ -143,7 +143,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Colab Dev project PAGE 2</a>
+    <a class="navbar-brand" href="#">OpenDayWLV!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -224,6 +224,39 @@ Second page of content yuh, this will contain a database filled with information
   <?php endwhile;?> 
 
   </table> 
+
+
+<?php
+
+  $sql = "SELECT Talk_ID, Subject_Name, Subject_TalkLocation, Subject_TalkDayTime FROM TalksTable"; 
+    $result = $mysqli -> query($sql); ?>
+
+
+<table class="table table-striped table-info"> 
+
+      <tr> 
+
+        <th>Subject</th> 
+        <th>Location</th> 
+        <th>Date and Time</th> 
+
+
+      </tr> 
+
+      <?php while($row = $result->fetch_assoc()):?> 
+
+        <tr> 
+
+          <td><?=$row['Subject_Name']?></td> 
+          <td><?=$row['Subject_TalkLocation']?></td> 
+          <td><?=$row['Subject_TalkDaytime']?></td> 
+
+        </tr> 
+
+      <?php endwhile;?> 
+
+      </table> 
+
 
 
 <div class="space"></div>

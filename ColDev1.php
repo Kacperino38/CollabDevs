@@ -3,7 +3,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title> ColabDev_Website1 </title> 
+    <title> OpenDay1.com </title> 
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
@@ -71,9 +71,14 @@
       font-weight: bold;
     }
 
-    .contenth {
+    .contenth1 {
       padding: 10px;
-      font-size: 50px;
+      font-size: 42px;
+    }
+
+    .contenth2 {
+      padding: 10px;
+      font-size: 20px;
     }
 
     .contentt {
@@ -144,7 +149,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     
-    <a class="navbar-brand" href="#">Colab Dev Project PAGE 1</a>
+    <a class="navbar-brand" href="#">OpenDayWLV!</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -170,8 +175,15 @@
         <div class="content-wrapper">
 
         <!---Heading content--->
-        <div class="contenth">
-        WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
+
+        <div class="contenth2">
+        WELCOME TO THE 
+        </div>
+        <div class="cotenth1">
+        UNIVERSITY OF WOLVERHAMPTON OPEN DAY DIGITAL INFORMATION WEBPAGE!
+
+
+
         <div class="spaces"></div>
          <h1> Open Day Dates </h1>
         
@@ -179,7 +191,7 @@
          <br>
       
 
-<a href="ColDev2.php" class="button">Book Now new</a>
+<a href="ColDev4.php" class="button">Book Now new</a>
 
 <a href="ColDev2.php" ></a>
 <button style="font: size 25px;background-color: rgb(255, 255, 0);">Book Now old</button>

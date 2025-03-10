@@ -116,13 +116,7 @@
 
         <div class = page-padding> 
         <br>    
-Hello this is the colab dev project
-<div class="spaces"></div>
- 
-<br>
-
-Third page of the content yipee, this will be filled with information about the university, as well as city of Wolverhampton!
-<br>
+        This is the page for the form
 
 
 
