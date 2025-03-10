@@ -117,6 +117,30 @@
         <div class = page-padding> 
         <br>    
         This is the page for the form
+UOMAN KHANS CODE --
+		<form action="ColDev4.php" method="post">
+
+  <label for="first name ">First name :</label>
+  <input type="text"  id="first name " required placeholder="e.g uoman "><br>
+  <label for="last name ">Last Name:</label>
+  <input type="text" name="last name " id="last name"   required placeholder="khan"><br>
+  <label for="email"> Email Address:</label>
+  <input type="text" name="email " id="email " placeholder="EmailName@gmail.com"><br>
+  <label for="phone">Mobile Number:   </label>
+  <input type="tel" name="tel"  id="phone" placeholder="07400 123456"><br>
+  <label for="bday"> Date Of Birth:  </label>
+  <input type="date" id="bday"><br>
+  <label for="country"> country  </label>
+  <input type="text" name="country" id="country" placeholder="United Kingdom "><br>
+  <label for="guest">Number Of Guest Coming </label>
+  <input type="number" id="guest" min="0" max="4"><br>
+  <label for="sub">Main Subject Of Intrest </label>
+  <input type="text" name="sub" id="sub"  placeholder="computer science "><br>
+ <label for="level">  Level Of Intrest </label>
+ <input type="text" name="level" id="level" placeholder="Masters"><br>
+Please write a comment for 100 words talking about what you want to do in 
+Univercity in terms of study and hobbies <br>
+<textarea name="comment" id="comment "></textarea>
 
 
 
