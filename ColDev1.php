@@ -20,8 +20,8 @@
     } 
 
     .page-padding { 
-      margin-left: 12%; 
-      margin-right: 12%; 
+      margin-left: 8%; 
+      margin-right: 8%; 
       padding-bottom: 40px; 
       padding-top: 4px; 
       padding-left: 60px; 

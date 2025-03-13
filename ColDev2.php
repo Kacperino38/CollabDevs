@@ -20,8 +20,8 @@
     } 
 
     .page-padding { 
-      margin-left: 12%; 
-      margin-right: 12%; 
+      margin-left: 8%; 
+      margin-right: 8%; 
       padding-bottom: 40px; 
       padding-top: 4px; 
       padding-left: 60px; 
@@ -50,14 +50,14 @@
 
     .navbar .btn-outline-success {
       color: black;
-      border-color: rgb(140, 120, 90);
+      border-color: black;
     }
 
     .navbar .btn-outline-success:hover {
       color: black;
       font-weight: bold;
       border-color: black;
-      background-color: rgb(140, 120, 90);
+      background-color: rgb(211, 211, 255);
     }
 
     .nav-link {
@@ -167,13 +167,12 @@
         </div>
                 <!---Code for searchbar not yet working as no data is in place--->
 
-        <form class="d-flex" role="search" action="ColDev1.php" method="get">
+        <form class="d-flex" role="search" action="ColDev2.php" method="get">
       <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
-      value="<?php echo isset($_COOKIE['searchterms']) ? $_COOKIE['searchterms'] : ''; ?>">
+      value="<?php echo isset($_GET['searchterms']) ? htmlspecialchars($_GET['searchterms']) : ''; ?>">
 
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    </nav>
     </nav>
 
 
@@ -188,9 +187,9 @@ Subjects and Open Day Talks!
 <div class = contentt>
 Here you can find all the times for the talks at the University of Wolverhampton
 <br>
-The table on the left has the names of the lecturers that are representing subjects
+The first table has the names of the lecturers that are representing subjects
 <br>
-The table on the right has the times and locations for all the talks taking place during our open day season!
+The second table has the times and locations for all the talks taking place during our open day season!
 <br>
 <br>
 If you wish to sign up for the talks as well as recieve more information about the Open Day, find the Book Now button below! 
@@ -246,9 +245,18 @@ If you wish to sign up for the talks as well as recieve more information about t
 <div class="tabler">
 
 <?php
+  if(isset(($_GET['searchterms']))) {
+    $sql1 = "SELECT Talk_ID, Subject_Name, Subject_TalkLocation, Subject_TalkDayTime 
+    FROM TalksTable
+    WHERE Subject_Name LIKE '%" . $_GET['searchterms']. "%'";
 
-  $sql = "SELECT Talk_ID, Subject_Name, Subject_TalkLocation, Subject_TalkDayTime FROM TalksTable"; 
-    $result = $mysqli -> query($sql); ?>
+  }
+    else
+
+    $sql1 = "SELECT Talk_ID, Subject_Name, Subject_TalkLocation, Subject_TalkDayTime 
+    FROM TalksTable";
+    
+    $result = $mysqli -> query($sql1);?>
 
 
 <table class="table table-striped table-info"> 
@@ -262,13 +270,13 @@ If you wish to sign up for the talks as well as recieve more information about t
 
       </tr> 
 
-      <?php while($row = $result->fetch_assoc()):?> 
+      <?php while($row1 = $result->fetch_assoc()):?> 
 
         <tr> 
 
-          <td><?=$row['Subject_Name']?></td> 
-          <td><?=$row['Subject_TalkLocation']?></td> 
-          <td><?=$row['Subject_TalkDaytime']?></td> 
+          <td><?=$row1['Subject_Name']?></td> 
+          <td><?=$row1['Subject_TalkLocation']?></td> 
+          <td><?=$row1['Subject_TalkDayTime']?></td> 
 
         </tr> 
 
