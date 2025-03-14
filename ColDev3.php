@@ -115,13 +115,31 @@
         <div class = page-padding> 
         <br>    
 
-<p>Hello this is the colab dev project</p>
 
 <div class="spaces"></div>
  
+<h1>brief history About our university </h1>
+
+<div class="spaces"></div>
+ 
+<h2>early history 1827 - 19 century </h2>
+<h4>The University of Wolverhampton traces roots back to the 19th century, where it first started as a Mechanics Institute in 1827
+  where the institute provided education and technical skills to the working class people during the industrial revolution. back then it was 
+  called The Wolverhampton Mechanics Institute  and it was founded in 1827. In the latter part of the 19 century  this Institution grew even
+  more and became the Wolverhampton Free Library and Technical College, expanding its educational offerings. by 1931 it had evolved into the
+   Wolverhampton and Staffordshire Technical College expanding its curriculum filed into science, commerce and engineering. 
+<h4>
 <br>
-Third page of the content yipee, this will be filled with information about the university, as well as city of Wolverhampton!
+<h2>Expansion into Polytechnic 1969 - 1992</h2>
+<h4>In 1969 the institution was granted a polytechnic status and became known as the Wolverhampton Polytechnic. This great shift allowed the university to provide a wider range of higher education courses, this includes the  humanities, social sciences, and education and a traditional focus on science and engineering.
+Throughout the 70s and 80s the University or also known as the Wolverhampton Polytechnic continued to grow and attracting more students and began to expand its facilities to promote new degree-level programs which allowed students to earn formal qualifications in specialized field at the time which was very sighting in the region. This time period in the universities history was marked by modernization efforts which allowed the institution to adapted to the new demands of the workforce and higher education sector.<h4>
 <br>
+<h2>University Status and Modern Growth 1992 – Present day <h2>
+  <h4> near the end of the 20th century, national reforms allowed polytechnics to gain full university status in 1992, and the institution knowns as Wolverhampton Polytechnic officially became the University of Wolverhampton. This marked a new chapter in this institution’s history, now with more funding the institution expanded its research programs, postgraduate studies, and international collaborations.
+  now in the present day, the university has grown into a multi-campus institution, offering education to over 21,000 students across a wide range of disciplines. The university has 3 major campuses. These campuses include City Campus located in Wolverhampton; this campus acts as a main hub of the university as majority of the subjects are taught here. The Walsall Campus, this campus Specialising in sports education, and health subjects. The Telford Campus which is known for its engineering and business programs.
+  This university has come so far in its history from great challenges and struggles but as of today stands as great centre of education here in the west midlands , even today the university of Wolverhampton continues to be a leading institution in the Midlands , with very rich and diverse subjects and a passion and commitment to innovation, research.<h4>
+  <br>
+  <h2> travel </h2>
 
 
 
