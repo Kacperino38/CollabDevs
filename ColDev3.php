@@ -21,12 +21,14 @@
     } 
 
     h2{
+      padding: 5px;
+      font-size: 25px;
       font-weight: bold;
-      font-size:25px;
     }
 
     h4{
-      font-size:20px;
+      padding: 10px;
+      font-size: 20px;
     }
  
  
@@ -127,55 +129,32 @@
 
 <div class="spaces"></div>
  
-<h1>Brief history About our university </h1>
+<h1>Brief History About our University </h1>
 
 <div class="spaces"></div>
  
-<h2>Early history 1827 - 19 century </h2>
-<h4>The University of Wolverhampton traces roots back to the 19th century, where it first started as a Mechanics Institute in 1827
-  where the institute provided education and technical skills to the working class people during the industrial revolution. back then it was 
-  called The Wolverhampton Mechanics Institute  and it was founded in 1827. In the latter part of the 19 century  this Institution grew even
-  more and became the Wolverhampton Free Library and Technical College, expanding its educational offerings. by 1931 it had evolved into the
-   Wolverhampton and Staffordshire Technical College expanding its curriculum filed into science, commerce and engineering. 
-<h4>
-<br>
+<h2>Early History 1827 - 19th Century</h2>
+<h4>The University of Wolverhampton traces its roots back to the 19th century, where it first started as a Mechanics Institute in 1827. The institute provided education and technical skills to working-class people during the Industrial Revolution. Back then, it was called The Wolverhampton Mechanics Institute and was founded in 1827. In the latter part of the 19th century, the institution grew even more and became the Wolverhampton Free Library and Technical College, expanding its educational offerings. By 1931, it had evolved into the Wolverhampton and Staffordshire Technical College, further expanding its curriculum to include science, commerce, and engineering.</h4>
+
 <h2>Expansion into Polytechnic 1969 - 1992</h2>
-<h4>In 1969 the institution was granted a polytechnic status and became known as the Wolverhampton Polytechnic. This great shift allowed the university to provide a wider range of higher education courses, this includes the  humanities, social sciences, and education and a traditional focus on science and engineering.
-Throughout the 70s and 80s the University or also known as the Wolverhampton Polytechnic continued to grow and attracting more students and began to expand its facilities to promote new degree-level programs which allowed students to earn formal qualifications in specialized field at the time which was very sighting in the region. This time period in the universities history was marked by modernization efforts which allowed the institution to adapted to the new demands of the workforce and higher education sector.<h4>
-<br>
-<h2>University Status and Modern Growth 1992 – Present day <h2>
-  <h4> near the end of the 20th century, national reforms allowed polytechnics to gain full university status in 1992, and the institution knowns as Wolverhampton Polytechnic officially became the University of Wolverhampton. This marked a new chapter in this institution’s history, now with more funding the institution expanded its research programs, postgraduate studies, and international collaborations.
-  now in the present day, the university has grown into a multi-campus institution, offering education to over 21,000 students across a wide range of disciplines. The university has 3 major campuses. These campuses include City Campus located in Wolverhampton; this campus acts as a main hub of the university as majority of the subjects are taught here. The Walsall Campus, this campus Specialising in sports education, and health subjects. The Telford Campus which is known for its engineering and business programs.
-  This university has come so far in its history from great challenges and struggles but as of today stands as great centre of education here in the west midlands , even today the university of Wolverhampton continues to be a leading institution in the Midlands , with very rich and diverse subjects and a passion and commitment to innovation, research.<h4>
-  <br>
-  <h2> Travel </h2>
-  <h4>
-    Traveling to the university to Wolverhampton can be expensive if u don’t live in an accommodation, 
-    but we have ways that can be cheap and well-priced, many students complain about travel to the university as they many of them 
-    live in cities like Birmingham, Coventry and Dudley . This can be challenge for those students as they must come on trains or 
-    taxi which can be very expensive in the long run.
-  </h4> <br>
-  <a href="https://ticketsearch.tfwm.org.uk/#/?allowBus&allowTrain&allowMetro&passengerType=Student&timeBand=About%20a%20month&limit=6&limitExact=6#sbmBtn">
+<h4>In 1969, the institution was granted polytechnic status and became known as the Wolverhampton Polytechnic. This significant shift allowed the university to provide a wider range of higher education courses, including humanities, social sciences, and education, alongside its traditional focus on science and engineering. Throughout the 70s and 80s, Wolverhampton Polytechnic continued to grow, attracting more students and expanding its facilities. This growth enabled the university to offer new degree-level programs, allowing students to earn formal qualifications in specialized fields, which was an exciting development for the region. This period in the university’s history was marked by modernization efforts, allowing the institution to adapt to the evolving demands of the workforce and higher education sector.</h4>
 
-    <h2> Swift Card </h2>
-  </a>
-   <h4>
-    Currently swift are giving away student discounts for their swift cards which help students get to the university faster and cheaper 
-    than ordering a taxi or buying a rail card , we know this as students from Birmingham typically spend around £10.50 pounds per ticket
-    to the university , which can cost up to £168 per month which can be very expensive for a student but with swift it typically costs around 
-    £90 per month and you get access to not only train but you also get tram and bus with this card . we as the university of Wolverhampton 
-    recommend that all our students coming from other cities should buy a swift card as it would save your money which can be invested in better equipment for your studies .
-   </h4><br>
+<h2>University Status and Modern Growth 1992 – Present Day</h2>
+<h4>Near the end of the 20th century, national reforms allowed polytechnics to gain full university status in 1992, and the institution known as Wolverhampton Polytechnic officially became the University of Wolverhampton. This marked a new chapter in the institution’s history, and with increased funding, the university expanded its research programs, postgraduate studies, and international collaborations. Today, the University of Wolverhampton is a multi-campus institution, offering education to over 21,000 students across a wide range of disciplines. The university has three major campuses:
+  <ul>
+    <li><strong>City Campus</strong> - Located in Wolverhampton, this campus serves as the main hub of the university where the majority of subjects are taught.</li>
+    <li><strong>The Walsall Campus</strong> - Specializing in sports education and health-related subjects.</li>
+    <li><strong>The Telford Campus</strong> - Known for its engineering and business programs.</li>
+  </ul>
+  The university has come a long way in its history, overcoming great challenges and struggles. Today, it stands as a major center of education in the West Midlands, continuing to lead in innovation, research, and offering a rich, diverse range of subjects.</h4>
 
-  <h2>How To Apply</h2> 
-  <h4>
-  Apply for a swift card can generally be easy all you require is a student id and your student finance details which swift use to confirm 
-  that u are a student at the university which allows that to give you the student discount .How to cancel swift card , to cancel  the swift
-  card all you need to do is to go on the app and website to cancel the swift cards direct debit or you can do it the old fashion way and phone
-  them up , after cancelling the swift card you cannot restart the card or direct debit but instead you have to redo the whole scheme to confirm 
-  that you are a student at this university to prevent fraud .
-  </h4>
+<h2>Travel</h2>
+<h4>Traveling to the University of Wolverhampton can be expensive, especially if you don’t live in university accommodation. Many students, especially those coming from cities like Birmingham, Coventry, and Dudley, find it challenging to manage the costs of travel, as they typically rely on trains or taxis, which can be very expensive over time.</h4><br>
+ <h2> <a href="https://ticketsearch.tfwm.org.uk/#/?allowBus&allowTrain&allowMetro&passengerType=Student&timeBand=About%20a%20month&limit=6&limitExact=6#sbmBtn">Swift Card</a></h2>
+<h4>Currently, Swift is offering student discounts for their Swift cards, which help students travel to the university faster and cheaper than using taxis or buying a railcard. For example, students traveling from Birmingham typically spend around £10.50 per ticket to get to the university, which can add up to £168 per month—quite expensive for a student. With the Swift card, however, the cost is typically reduced to around £90 per month, and the card grants access to trains, trams, and buses. We, at the University of Wolverhampton, highly recommend that all our students coming from other cities purchase a Swift card, as it can save you money that can be better invested in your studies.</h4>
 
+<h2>How To Apply</h2>
+<h4>Applying for a Swift card is simple. All you need is your student ID and your student finance details, which Swift uses to confirm that you are a student at the university. Once confirmed, you will receive the student discount. To cancel your Swift card, simply go to the app or website to cancel the direct debit, or you can contact them via phone. After cancellation, you will not be able to restart the card or direct debit, and instead, you must go through the entire application process again to confirm your student status to prevent fraud.</h4>
 
 
 

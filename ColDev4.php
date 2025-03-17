@@ -89,6 +89,17 @@
             padding: 10px;
         }
 
+        .button {
+      background-color: rgb(162, 208, 254);
+      border-style: solid;
+      border-color: black;
+      border-width: 2px;
+      color: black;
+      font-size: 40px;
+      text-decoration: none;
+      padding: 8px 8px;
+    }
+
     </style> 
      
     <head> 
@@ -151,6 +162,11 @@
 Please write around 100 words, tell us about what you want to do in 
 University in terms of your study, as well as your hobbies and interests <br>
 <textarea name="comment" id="comment "></textarea>
+
+<!-- Button element -->
+<br>
+<br>
+<button type="button" class="button" onclick="alert('Form Submitted!')">SUBMIT!</button>
 
       </div>
 

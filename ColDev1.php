@@ -135,7 +135,15 @@
       padding: 8px 8px;
     }
 
- 
+    h2{
+      font-weight: bold;
+      font-size:25px;
+    }
+
+    h4{
+      font-size:20px;
+    }
+
     </style> 
      
     <head> 
@@ -178,50 +186,40 @@
          <!---Heading content--->
 
         <div class="contenth2">
+        WELCOME TO
         </div>
         <br>
         <br>
         <div class="contenth1">
-        WELCOME TO THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY EVENT
+        THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY INFORMATION WEBPAGE
        </div>
 
-        <div class="space"></div>      
+        <div class="spaces"></div>      
         </div>
        
         <!---Normal content--->
         <div class="contentt">
-<H2>What Is This Event?
-</H2>        
-<h4>This event is a welcome to those students who want to join the university of Wolverhampton for their educational journey, our goal
-    is to show them how the university operates and how their subjects are taught here , we also want them to feel like they are in a 
-    safe and welcoming environment , where they can be free and open which will help boost their creativity and self esteem as going to
-    university is a big step and it can feel challenging and some times you feel like why am I here , we want you to get rid of that fear
-     and feeling as we want you to be welcomed to your new home.
 
-     <h2> Events Being Held </h2>
-     <h4>
-        The events being held at this years open day is going to be fun and challenging we are going to host a university treasure hunt where
-         you have to find 12 different QR codes found across the university to score the highest points on our hunt leaderboard to win a £50 amazon 
-         gift card and a free item of choice form the wlv store . we believe this type of event can get people working together and getting creative 
-         with their minds to find where we have hidden these QR codes.
-     </h4>
+        <h2>What Is This Event?</h2>
+<h4>This event is a warm welcome for students who are considering joining the University of Wolverhampton for their educational journey. Our goal is to show you how the university operates, how your subjects are taught, and to ensure that you feel comfortable in a safe and welcoming environment. We aim to help you feel free and open, fostering an atmosphere that boosts creativity and self-esteem. Starting university is a big step, and it can sometimes feel challenging, leaving you wondering, "Why am I here?" We want to help you overcome those fears and embrace your new journey, making you feel at home right from the start.</h4>
 
-    <h2> How to Enter</h2>
-    <h4>To enter this event you must sign up for the university of Wolverhampton open day and from there we have a link for the treasure hunt page where
-         you have to put your login details to enter the tournament which can help us keep track of each contestant.</h4>
+<h2>Events Being Held</h2>
+<h4>This year's Open Day is packed with fun and challenging activities! One of the main events is our University Treasure Hunt. Participants will have to find 12 different QR codes hidden across the university. The person with the highest score on our leaderboard will win a £50 Amazon gift card and a free item of choice from the WLV store. We believe this event will encourage collaboration and creativity, as participants work together to solve clues and find the QR codes hidden throughout the campus.</h4>
 
- <h2>Food And Other Amenities </h2>
- <h4> when it comes to Food the universities offers a lot of food , we have a costa coffee and we have a university bar where u can relax and there is a student union
-     where we have sofas and a  pool table and a PlayStation and we also have a gym located within the university where u can play sports with your friends , we also have 
-     a great night life as we have pubs and clubs around the university . on the day of the open day we also offer food such as pizza, drinks and desserts, we also offer 
-     coupons for fast food chains and restaurants .   </h4>
-     <h2> Parking </h2>
-     <h4>We know it can get busy on our open day as they is great amount of students and parents visiting the university , you may feel frustrated as you can not find parking 
-        but we have plenty of parking it’s just hidden , we have a total of 5 parking garages anear the university they aren’t that far , they are walking distance as they are 
-        3 minutes away from the university.</h4>
+<h2>How to Enter</h2>
+<h4>To enter the event, you must sign up for the University of Wolverhampton Open Day. Once registered, you will receive a link to the treasure hunt page, where you will log in with your details. This allows us to track each participant's progress and ensure fair play throughout the tournament.</h4>
+
+<h2>Food and Other Amenities</h2>
+<h4>At the University of Wolverhampton, we offer a variety of food options. You can grab a coffee at Costa Coffee, relax at the university bar, or unwind at the Student Union, which features sofas, a pool table, and even a PlayStation! We also have a gym where you can engage in sports activities with your friends. If you’re looking for a lively atmosphere, there are pubs and clubs around the university, adding to the vibrant student life. On the Open Day itself, we will be offering pizza, drinks, and desserts, as well as coupons for local fast food chains and restaurants.</h4>
+
+<h2>Parking</h2>
+<h4>We understand that parking can be a concern during busy events like the Open Day, but rest assured, there’s plenty of parking available. We have five parking garages near the university, all within walking distance—only about a 3-minute walk away. While the garages may seem hidden, they are conveniently located, so you shouldn’t have trouble finding a spot.</h4>
+
+
+        <br>
         <img src="parking.png.png" 
 alt="parking pic "
-height="200">
+height="250">
 
 
 
@@ -234,67 +232,7 @@ height="200">
         </div>
         </div>
 
-        
-
-
-
-
-<?php
-
-//connecting to sql
-
-    $mysqli = new
-    mysqli("localhost","2342154","K@cperino60018","db2342154");
-
-    //error msg
-    if ($mysqli -> connect_errno) {
-      echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-      exit();
-    }
-
-
-    if(isset(($_GET['searchterms']))) {
-    $sql = "SELECT Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language 
-            FROM 5e_Race
-            WHERE Race_Name LIKE '%" . $_GET['searchterms']. "%'";
-
-            setcookie("searchterms", $_GET['searchterms'], time()+3600);
-
-    }
-    else
-
-    $sql = "SELECT  Race_Name, Race_Bonus, Race_Size, Race_Speed, Race_Language FROM 5e_Race";
-
-
-    //retrieve data (display below)
-    $result = $mysqli -> query($sql);?>
-
-    <!-- Code below displays the data in a table 
-
-    <br>
-This is the template for the database part!!!!
-    </br>
-    <table class="table table-striped">
-    <div class ="tableheading">
-    <tr>
-      <th  style="color:white;background-color:#A0522D">Name</th>
-      <th  style="color:white;background-color:#A0522D">Something</th>
-      <th  style="color:white;background-color:#A0522D">Something else</th>
-      <th  style="color:white;background-color:#A0522D">A fourth thing</th>
-      <th  style="color:white;background-color:#A0522D">Another thing</th>
-    </tr>
-  </div>
-    <?php while($row = $result->fetch_assoc()):?>
-      <tr>
-        <td><a href="KMwebsitedetails.php?which=<?=$row['Race_Name']?>"><?=$row['Race_Name']?></td>
-        <td><?=$row['Race_Bonus']?></td>
-        <td><?=$row['Race_Size']?></td>
-        <td><?=$row['Race_Speed']?></td>
-        <td><?=$row['Race_Language']?></td>
-      </tr>
-  <?php endwhile;?>
-  </table>
-  -->
+      
 
         </div>
 
@@ -312,10 +250,6 @@ This is the template for the database part!!!!
         <img src="IMG_4864" style="height:220px; width:auto">
         </div>
     </div>
-
-<?php
-
-?>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
