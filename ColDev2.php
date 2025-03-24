@@ -198,10 +198,11 @@ If you wish to sign up for the talks as well as recieve more information about t
 <div class="spaces"></div>
 
 <?php
+include("ColDev5.php");
+
 //connecting to sql (php my admin) 
 
-    $mysqli = new
-    mysqli("localhost","2342154","K@cperino60018","db2342154"); 
+$mysqli = dbinfo();
 
  //error msg
  if ($mysqli -> connect_errno) {

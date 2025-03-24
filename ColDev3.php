@@ -86,6 +86,15 @@
             font-size: 22px;
             font-weight: bold;
         }
+
+        iframe
+        {
+          padding: 2px;
+          width: 85%;
+          height: 85%;
+          margin-bottom:20px;
+          border: none;
+        }
  
     </style> 
      
@@ -155,6 +164,24 @@
 
 <h2>How To Apply</h2>
 <h4>Applying for a Swift card is simple. All you need is your student ID and your student finance details, which Swift uses to confirm that you are a student at the university. Once confirmed, you will receive the student discount. To cancel your Swift card, simply go to the app or website to cancel the direct debit, or you can contact them via phone. After cancellation, you will not be able to restart the card or direct debit, and instead, you must go through the entire application process again to confirm your student status to prevent fraud.</h4>
+
+
+<h2> Videos: </h2>
+<iframe class="iframe"
+src="https://www.youtube.com/embed/6BcnxY_R-QM?si=A36AAqxC6FRIzoPR" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+<iframe class="iframe"
+src="https://www.youtube.com/embed/U2UKxLua-Uo?si=OlmWeq1iPI02qXTG" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe class="iframe"
+src="https://www.youtube.com/embed/GOsYPUNsxLE?si=hyaOkZpmnbGZGf2n" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
