@@ -24,8 +24,8 @@
       margin-right: 8%; 
       padding-bottom: 40px; 
       padding-top: 4px; 
-      padding-left: 60px; 
-      padding-right: 60px; 
+      padding-left: 40px; 
+      padding-right: 40px; 
       background-color: rgb(245, 245, 251); 
       flex-grow: 1; /* This will push the footer down */
     }

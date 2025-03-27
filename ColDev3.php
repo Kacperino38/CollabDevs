@@ -37,8 +37,8 @@
 			margin-right: 8%; 
 			padding-bottom: 80px; 
             padding-top: 4px; 
-            padding-left: 60px; 
-            padding-right: 60px; 
+            padding-left: 40px; 
+            padding-right: 40px; 
 			background-color: rgb(245, 245, 251); 
 
 
@@ -152,10 +152,10 @@
 <h4>Near the end of the 20th century, national reforms allowed polytechnics to gain full university status in 1992, and the institution known as Wolverhampton Polytechnic officially became the University of Wolverhampton. This marked a new chapter in the institution’s history, and with increased funding, the university expanded its research programs, postgraduate studies, and international collaborations. Today, the University of Wolverhampton is a multi-campus institution, offering education to over 21,000 students across a wide range of disciplines. The university has three major campuses:
   <ul>
     <li><strong>City Campus</strong> - Located in Wolverhampton, this campus serves as the main hub of the university where the majority of subjects are taught.</li>
-    <li><strong>The Walsall Campus</strong> - Specializing in sports education and health-related subjects.</li>
-    <li><strong>The Telford Campus</strong> - Known for its engineering and business programs.</li>
+    <li><strong>Walsall Campus</strong> - Specializing in sports education and health-related subjects.</li>
+    <li><strong>Telford Campus</strong> - Known for its engineering and business programs.</li>
   </ul>
-  The university has come a long way in its history, overcoming great challenges and struggles. Today, it stands as a major center of education in the West Midlands, continuing to lead in innovation, research, and offering a rich, diverse range of subjects.</h4>
+  The university has come a long way in its grand history, overcoming great challenges and struggles. Today, it stands as a major center of education in the West Midlands, continuing to lead in innovation, research, and offering a rich, diverse range of subjects.</h4>
 
 <h2>Travel</h2>
 <h4>Traveling to the University of Wolverhampton can be expensive, especially if you don’t live in university accommodation. Many students, especially those coming from cities like Birmingham, Coventry, and Dudley, find it challenging to manage the costs of travel, as they typically rely on trains or taxis, which can be very expensive over time.</h4><br>
