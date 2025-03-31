@@ -3,7 +3,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title> OpenDay2.com </title> 
+    <title> OpenDayTalks.com </title> 
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
@@ -40,6 +40,9 @@
 
     .navbar {   
       background-color: rgb(162, 208, 254) !important;
+      width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     }
 
     .navbar-brand {
@@ -57,7 +60,11 @@
       color: black;
       font-weight: bold;
       border-color: black;
-      background-color: rgb(211, 211, 255);
+      background-color: rgb(185, 226, 254);
+    }
+
+    .form-control.me-2{
+    
     }
 
     .nav-link {
@@ -139,6 +146,15 @@
       padding: 8px 8px;
     }
 
+    h2{
+      padding: 5px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .container-fluid {
+     
+    }
 
     </style> 
      
@@ -162,17 +178,20 @@
         <a class="nav-link" href="ColDev1.php">Homepage</a>
         <a class="nav-link" href="ColDev2.php">Subject Talks</a>
         <a class="nav-link" href="ColDev3.php">Information</a>
+        <a class="nav-link" href="ColDev6.php">Travel</a>
         </div>
         </div>
         </div>
-                <!---Code for searchbar not yet working as no data is in place--->
-
+                <!---Code for searchbar --->
         <form class="d-flex" role="search" action="ColDev2.php" method="get">
+        <div class="container-fluid">        
+        <div class="d-flex ms-3">
       <input name="searchterms" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
       value="<?php echo isset($_GET['searchterms']) ? htmlspecialchars($_GET['searchterms']) : ''; ?>">
-
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
+    </div>
+    </div>
     </nav>
 
 
@@ -185,9 +204,11 @@ Subjects and Open Day Talks!
 <div class="spaces"></div>
 
 <div class = contentt>
-Here you can find all the times for the talks at the University of Wolverhampton
+Here you can find all the times for the talks at the University of Wolverhampton.
 <br>
-The first table has the names of the lecturers that are representing subjects
+All of the talks listed here will be held in the main city campus.
+<br>
+The first table has the names of the lecturers that are representing subjects.
 <br>
 The second table has the times and locations for all the talks taking place during our open day season!
 <br>

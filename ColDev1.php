@@ -3,7 +3,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title> OpenDay1.com </title> 
+    <title> OpenDay.com </title> 
     <link rel="icon" type="image/jpg" href="favicon.jpg">
      
     <style>  
@@ -73,17 +73,6 @@
       color: black;
       font-size: 22px;
       font-weight: bold;
-    }
-
-    .contenth1 {
-      padding: 10px;
-      font-size: 46px;
-    }
-
-    .contenth2 {
-      padding: 10px;
-      padding-bottom: 0px;
-      font-size: 20px;
     }
 
     .contentt {
@@ -165,6 +154,11 @@
       background-color: rgb(162, 208, 254);
     }
 
+    .contenth {
+      padding: 10px;
+      font-size: 50px;
+    }
+
     </style> 
      
     <head> 
@@ -189,6 +183,7 @@
         <a class="nav-link" href="ColDev1.php">Homepage</a>
         <a class="nav-link" href="ColDev2.php">Subject Talks</a>
         <a class="nav-link" href="ColDev3.php">Information</a>
+        <a class="nav-link" href="ColDev6.php">Travel</a>
         </div>
         </div>
         </div>
@@ -206,13 +201,8 @@
 
          <!---Heading content--->
 
-        <div class="contenth2">
-        WELCOME TO
-        </div>
-        <br>
-        <br>
-        <div class="contenth1">
-        THE UNIVERSITY OF WOLVERHAMPTON OPEN DAY INFORMATION WEBPAGE
+        <div class="contenth">
+        WLV Open Day Webpage
        </div>
 
         <div class="spaces"></div>      
@@ -224,22 +214,11 @@
         <h2>What Is This Event?</h2>
 <h4>This event is a warm welcome for students who are considering joining the University of Wolverhampton for their educational journey. Our goal is to show you how the university operates, how your subjects are taught, and to ensure that you feel comfortable in a safe and welcoming environment. We aim to help you feel free and open, fostering an atmosphere that boosts creativity and self-esteem. Starting university is a big step, and it can sometimes feel challenging, leaving you wondering, "Why am I here?" We want to help you overcome those fears and embrace your new journey, making you feel at home right from the start.</h4> <br>
 
-<h2>Events Being Held</h2>
-<h4>This year's Open Day is packed with fun and challenging activities! One of the main events is our University Treasure Hunt. Participants will have to find 12 different QR codes hidden across the university. The person with the highest score on our leaderboard will win a £50 Amazon gift card and a free item of choice from the WLV store. We believe this event will encourage collaboration and creativity, as participants work together to solve clues and find the QR codes hidden throughout the campus.</h4> <br>
+<h2>Subject Talks</h2>
+<h4>We have a variety of talks taking place during our open day. These are centered around all the various subjects and degrees that you may be interested in. On the information page, there is a list off all the talks taking place, including the teachers that shall be leading these talks, have a browse and find your subject of interest!</h4> <br>
 
-<h2>How to Enter</h2>
-<h4>To enter the event, you must sign up for the University of Wolverhampton Open Day. Once registered, you will receive a link to the treasure hunt page, where you will log in with your details. This allows us to track each participant's progress and ensure fair play throughout the tournament.</h4> <br>
-
-<h2>Parking</h2>
-<h4>We understand that parking can be a concern during busy events like the Open Day, but rest assured, there’s plenty of parking available. We have five parking garages near the university, all within walking distance—only about a 3-minute walk away. While the garages may seem hidden, they are conveniently located, so you shouldn’t have trouble finding a spot.</h4>
-
-
-        <br>
-        <img src="parking.png.png" 
-        alt="parking pic "
-        height="240px" width=auto>
-        <br>
-        <br>
+<h2>Treasure Hunt</h2>
+<h4>This year's Open Day is packed with fun and challenging activities! One of the main events is our University Treasure Hunt. Participants will have to find 12 different QR codes hidden across the university. The person with the highest score on our leaderboard will win a £50 Amazon gift card and a free item of choice from the WLV store. We believe this event will encourage collaboration and creativity, as participants work together to solve clues and find the QR codes hidden throughout the campus. To enter the event, you must sign up for the University of Wolverhampton Open Day. Once registered, you will receive a link to the treasure hunt page, where you will log in with your details. This allows us to track each participant's progress and ensure fair play throughout the tournament.</h4> <br>
 
 <h2>Food and Other Amenities</h2>
 <h4>At the University of Wolverhampton, we offer a variety of food options. You can grab a coffee at Costa Coffee, relax at the university bar, or unwind at the Student Union, which features sofas, a pool table, and even a PlayStation! We also have a gym where you can engage in sports activities with your friends. If you’re looking for a lively atmosphere, there are pubs and clubs around the university, adding to the vibrant student life. On the Open Day itself, we will be offering pizza, drinks, and desserts, as well as coupons for local fast food chains and restaurants.</h4> <br>
