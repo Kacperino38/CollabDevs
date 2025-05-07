@@ -138,7 +138,11 @@
         <br>    
         Sign up now and recieve an email about our open day!
       <!-- UOMAN KHANS CODE -->
-		<form action="ColDev4.php" method="post">
+		<form action="ColDev4.php" method="post" novalidate>
+
+      <!-- CSRF Token --> 
+
+      <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'] ?? '') ?>"> 
 
   <div class= formstyle>
 
@@ -167,11 +171,17 @@ University in terms of your study, as well as your hobbies and interests <br>
 <!-- Button element -->
 <br>
 <br>
-<button type="button" class="button" onclick="alert('Thank you, Form Submitted!')">SUBMIT!</button>
+<button type="button" class="button" onclick="alert('Thank you, Form Submitted!'); redirect()">SUBMIT!</button>
 
       </div>
 
+      <script>
+      
+      function redirect(){
+        window.location.replace("ColDev4.php");
+    }
 
+      </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body> 
