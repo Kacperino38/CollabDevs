@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Treasure Hunt</title>
+  <title>Map - WLV Treasure Hunt</title>
   <style>
     body {
       background-color: #fdf5e6;
@@ -32,6 +32,7 @@
       font-family: 'Pirata One', cursive;
       color: #8B4513;
       margin-top: 20px;
+      font-size: 28px;
     }
 
     p, ul {
@@ -39,12 +40,18 @@
       line-height: 1.6;
       color: #4B3621;
     }
+
+    .nav-link {
+      font-size: 36px;
+      margin-left: 5px;
+      margin-right: 5px
+    }
+
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
-     <!--kacper add links down here !-->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">☠️Treasure Hunt</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,14 +59,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">Clues</a>
-          <a class="nav-link" href="#">Map</a>
+        <a class="nav-link" href="ColDevT1.php">Home</a>
+        <a class="nav-link" href="ColDevT2.php">Clues</a>
+        <a class="nav-link" href="ColDevT3.php">Map</a>
         </div>
       </div>
     </div>
   </nav>
 
+  <div class="page-padding">
   <div class="container">
     <h2>Treasure Hunt Map</h2>
     <p>Get ready for an adventure! Here's your Treasure map , your key to unlocking hidden clues scattered all across campus.
@@ -71,9 +79,9 @@
 <p>Thanks for taking part in the Treasure Hunt! We hope you had loads of fun exploring the campus like a true pirate. 
    When you're done finding all the clues, go find a member of staff and say the secret phrase. If you get it right, you'll win an 
    awesome prize of £50 credit in your WLV Wallet and a University of Wolverhampton hoodie with a cool treasure hunt design! Please 
-   remember to be respectful to other hunters and don't spoil the answer. Thanks again for joining our open day at the university of Wolverhampton, we hope to see you again soon on campus!</p>
+   remember to be respectful to other hunters and don't spoil the answer. Thanks again for joining our Open Day at the University of Wolverhampton, we hope to see you again soon on campus!</p>
 
-
+</div>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

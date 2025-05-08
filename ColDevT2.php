@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Clues - Treasure Hunt</title>
+  <title>Clues - WLV Treasure Hunt</title>
   <style>
     body {
       background-color: #fdf5e6;
@@ -28,10 +28,17 @@
       font-size: 24px;
     }
 
-    h2 {
+    h1 {
       font-family: 'Pirata One', cursive;
       color: #8B4513;
       margin-top: 20px;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-family: 'Pirata One', cursive;
+      color: #8B4513;
+      margin-top: 28px;
     }
 
     p, ul {
@@ -55,29 +62,35 @@
       font-weight: bold;
       color: #8B4513;
     }
+
+    .nav-link {
+      font-size: 36px;
+      margin-left: 5px;
+      margin-right: 5px
+    }
+    
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-       <!--kacper add links down here !-->
-      <a class="navbar-brand" href="#">☠️Tresauree Hunt</a>
+      <a class="navbar-brand" href="#">☠️Treasure Hunt</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link active" href="#">Clues</a>
-          <a class="nav-link" href="#">Map</a>
+        <a class="nav-link" href="ColDevT1.php">Home</a>
+        <a class="nav-link" href="ColDevT2.php">Clues</a>
+        <a class="nav-link" href="ColDevT3.php">Map</a>
         </div>
       </div>
     </div>
   </nav>
 
   <div class="page-padding">
-    <h2>Ready for the Clues?</h2>
+    <h1>Ready for the Clues?</h1>
     <p>Ahoy, treasure hunters! Below are the clues to guide your adventure across the University campus. Keep your wits sharp and your crew close, as each clue brings you closer to uncovering the hidden treasure!</p>
 
     <div class="clue-list">
