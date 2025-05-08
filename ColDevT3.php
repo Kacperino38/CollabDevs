@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Map - WLV Treasure Hunt</title>
   <style>
@@ -73,7 +73,7 @@
     <p>Get ready for an adventure! Here's your Treasure map , your key to unlocking hidden clues scattered all across campus.
        Every stop on this thrilling journey brings you one step closer to the legendary treasure! Let the hunt begin!</p>
     
-    <img src="map.png.jpeg" alt="Treasure Map" class="map-img d-block mx-auto" height="800">
+    <img src="map.png.jpeg" alt="Treasure Map" class="map-img d-block mx-auto" height="450px" width=auto>
 
     <h2>End of the Hunt</h2>
 <p>Thanks for taking part in the Treasure Hunt! We hope you had loads of fun exploring the campus like a true pirate. 
