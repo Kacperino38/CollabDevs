@@ -54,6 +54,18 @@
       margin-right: 5px
     }
 
+    .button {
+      background-color: rgb(253, 245, 230);
+      border-style: solid;
+      border-color: black;
+      border-width: 1px;
+      color: rgb(139, 69, 19) ;
+      font-size: 32px;
+      text-decoration: none;
+      padding: 8px 8px;
+      font-family: 'Pirata One', cursive;
+    }
+
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 </head>
@@ -98,6 +110,24 @@
   <li>Respect the staff and your fellow adventurers, we're all in this together!</li>
   <li>Play fair, have fun, and remember: safety first on this treasure-filled journey!</li>
  </ul>
+
+ <br>
+
+ <button type="button" class="button" onclick="confirmSubmission()">BACK TO OPEN DAY SITE</button>
+
+  <script>
+  function confirmSubmission() {
+      if (confirm('Have you made sure to read all the clues before leaving? ')) {
+          // User clicked "YES"
+          alert('See you soon Matey!');
+          window.location.href = 'https://mi-linux.wlv.ac.uk/~2342154/ColDev1.php';
+      } else {
+          // User clicked "NO"
+          ;
+      }
+  }
+  </script>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
