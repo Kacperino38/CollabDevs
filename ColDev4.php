@@ -172,6 +172,10 @@ University in terms of your study, as well as your hobbies and interests <br>
 <br>
 <br>
 <button type="button" class="button" onclick="alert('Thank you, Form Submitted!'); redirect()">SUBMIT!</button>
+	  <!--
+<button type="button" class="button" onclick="alert('Thank you, Form Submitted!'); window.location.href='https://mi-linux.wlv.ac.uk/~2342154/ColDevT1.php';">SUBMIT!</button>
+-->
+
 
       </div>
 
